@@ -136,6 +136,7 @@ const playerSelectionCardNine = document.getElementById('btn-nine').addEventList
 
 // per player calculate section 
 const playerExpense = document.getElementById('calculate-btn').addEventListener('click', function () {
+   
     const perPlayerPriceString = document.getElementById('per-player');
     const getPerPlayer = perPlayerPriceString.value;
     const perPlayerPriceNumber = parseFloat(getPerPlayer);
@@ -143,7 +144,6 @@ const playerExpense = document.getElementById('calculate-btn').addEventListener(
         alert('Plaease Input Valid number');
         return
     }
-    
     const playerListItem = document.getElementById('player-list');
     
     const playerItemsLength = playerListItem.childNodes.length - 1;
