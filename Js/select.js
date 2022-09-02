@@ -155,24 +155,15 @@ const playerExpense = document.getElementById('calculate-btn').addEventListener(
         alert('You Cannot select more than 5 please select only 5 Players')
         return
     }
-    console.log(playerItemsLength);
-
+    
     const total = playerItemsLength * perPlayerPriceNumber;
-    // console.log(total);
-
     const showTotal = document.getElementById('expense-total');
-    //    const showTotalString = showTotal.innerText;
-    //    const showTotalNumber = parseFloat(showTotalString);
-
-    //    console.log(showTotalNumber);
     showTotal.innerText = total;
-
 
 });
 
 // total calulation 
 const allTotalExpenses = document.getElementById('total-btn').addEventListener('click', function () {
-    // console.log('button clicked');
     const managerExpense = document.getElementById('manager-input');
     const managerTotalString = managerExpense.value;
     const managerTotalNumber = parseFloat(managerTotalString);
@@ -193,16 +184,9 @@ const allTotalExpenses = document.getElementById('total-btn').addEventListener('
     const allTotalCost = document.getElementById('expense-total')
     const allTotalCostString = allTotalCost.innerText;
     const allTotalCostNumber = parseFloat(allTotalCostString);
-
-
     totalExpenses.innerText = coachTotalNumber + managerTotalNumber + allTotalCostNumber;
 
-
-
 });
-
-
-
 
 // code for button disabled 
 
