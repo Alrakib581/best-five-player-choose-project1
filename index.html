@@ -4,9 +4,185 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <!-- bootstrap cdn  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <!-- bootstrap cdn  -->
+    <!-- external stylesheet  -->
+    <link rel="stylesheet" href="style.css">
+    <!-- external stylesheet  -->
+    <title>Chose your 5 best Player and make great cricket team</title>
 </head>
+
 <body>
+    <div class="bg-dark">
+        <!-- header start  -->
+        <header class="container text-white">
+            <div class="row pt-5 pb-5 d-flex align-items-center">
+                <div class="col-lg-7 pe-5 ">
+                    <h1 class="mb-5">Choose Your Best five Player and Make a Great cricket team.</h1>
+                    <p class="fs-5">Cricket, England’s national summer sport, which is now played throughout the world, particularly in Australia, India, Pakistan, the West Indies, Bangladesh and others.
+                    Cricket is played with a bat and ball and involves two competing sides (teams) of 11 players. The field is oval with a rectangular area in the middle, known as the pitch, that is 22 yards (20.12 metres) by 10 feet (3.04 metres) wide. Two sets of three sticks, called wickets, are set in the ground at each end of the pitch. 
+                </div>
+                <div class="col-lg-5">
+                    <img class="img-fluid" src="./playerImage/header.png" alt="">
+                </div>
+                
+            </div>
+        </header>
+        <!-- header end  -->
+        <main class="container mb-5 mt-5">
+            <section>
+               <div class="row">
+                <div class="col-lg-9">
+                    <div class="row gy-4">
+                        <div class="col-lg-4">
+                            <div class="player-card border border-secondary">
+                                <img src="./playerImage/habibulBashar.jpg" class="card-img-top img-size" alt="...">
+                                <div class="text-center py-4">
+                                    <h5 id="player-one" class="text-white">Habibul Bashar</h5>
+                                    <p class="text-secondary">50 Match . 2000 Run</p>
+                                    <button id="btn-one" onclick="disable1()" class="button px-5 py-2 text-white">Select</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="player-card border border-secondary">
+                                <img src="./playerImage/abdur-razzak.jpg" class="card-img-top img-size" alt="...">
+                                <div class="text-center py-4">
+                                    <h5 id="player-two" class="text-white">Abdur Razzak</h5>
+                                    <p class="text-secondary">50 Match . 2000 Run</p>
+                                    <button id="btn-two" onclick="disable2()" class="button px-5 py-2 text-white">Select</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="player-card border border-secondary">
+                                <img src="./playerImage/mashrafe.jpg" class="card-img-top img-size" alt="...">
+                                <div class="text-center py-4">
+                                    <h5 id="player-three" class="text-white">Mashrafee Bin Mortaza</h5>
+                                    <p class="text-secondary">50 Match . 2000 Run</p>
+                                    <button id="btn-three" onclick="disable3()" class="button px-5 py-2 text-white">Select</button>
+                                </div>
+                            </div>
+                        </div>
     
+                       
+                        <div class="col-lg-4">
+                            <div class="player-card border border-secondary">
+                                <img src="./playerImage/aftab.jpg" class="card-img-top img-size" alt="...">
+                                <div class="text-center py-4">
+                                    <h5 id="player-four" class="text-white">Aftab Ahmed</h5>
+                                    <p class="text-secondary">50 Match . 2000 Run</p>
+                                    <button id="btn-four" onclick="disable4()" class="button px-5 py-2 text-white">Select</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="player-card border border-secondary">
+                                <img src="./playerImage/shakib.jpg" class="card-img-top img-size" alt="...">
+                                <div class="text-center py-4">
+                                    <h5 id="player-five" class="text-white">Shakib Al Hasan</h5>
+                                    <p class="text-secondary">50 Match . 2000 Run</p>
+                                    <button id="btn-five" onclick="disable5()" class="button px-5 py-2 text-white">Select</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="player-card border border-secondary">
+                                <img src="./playerImage/Alok.jpg" class="card-img-top img-size" alt="...">
+                                <div class="text-center py-4">
+                                    <h5 id="player-six" class="text-white">Alok Kapali</h5>
+                                    <p class="text-secondary">50 Match . 2000 Run</p>
+                                    <button id="btn-six" onclick="disable6()" class="button px-5 py-2 text-white">Select</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="player-card border border-secondary">
+                                <img src="./playerImage/mushfiq.jpg" class="card-img-top img-size" alt="...">
+                                <div class="text-center py-4">
+                                    <h5 id="player-seven" class="text-white">Mushfiqur Rahim</h5>
+                                    <p class="text-secondary">50 Match . 2000 Run</p>
+                                    <button id="btn-seven" onclick="disable7()" class="button px-5 py-2 text-white">Select</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="player-card border border-secondary">
+                                <img src="./playerImage/tamim-iqbal.jpg" class="card-img-top img-size" alt="...">
+                                <div class="text-center py-4">
+                                    <h5 id="player-eight" class="text-white">Tamim Iqbal</h5>
+                                    <p class="text-secondary">50 Match . 2000 Run</p>
+                                    <button id="btn-eight" onclick="disable8()" class="button px-5 py-2 text-white">Select</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="player-card border border-secondary">
+                                <img src="./playerImage/mahmulla.jpg" class="card-img-top img-size" alt="...">
+                                <div class="text-center py-4">
+                                    <h5 id="player-nine" class="text-white">Mahmudulla Ryad</h5>
+                                    <p class="text-secondary">50 Match . 2000 Run</p>
+                                    <button id="btn-nine" onclick="disable9()" class="button px-5 py-2 text-white">Select</button>
+                                </div>
+                            </div>
+                        </div>
+                         
+    
+                    </div>
+                </div>
+                <div class="col-lg-3">
+                    <div class="row gy-4">
+                             <!-- output result card  -->
+                        <div class="col-12 text-white ">
+                            <div style="min-height:358px ;" class="player-card border border-secondary">
+                                <h4 class="text-center  py-3 border-bottom border-secondary">Selecet - Five!</h4>
+                                <div class="py-4 px-2">
+                                    <ol id="player-list">
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-12 text-white ">
+                            <div class="player-card border border-secondary">
+                                <h4 class="text-center py-3 border-bottom border-secondary">Budget</h4>
+                                <div class="py-3 px-3 text-center mx-3">
+                                    <p class="fs-5 text-secondary d-flex justify-content-between"><span>Per Player</span> <span> <input id="per-player" class="input-field" type="text"></span></p>
+                                    <p><button id="calculate-btn" class="cal-button">Calculate</button></p>
+                                    <P class="d-flex justify-content-between"><span class="fs-5 text-secondary">Player Expenses</span><span class="fs-5">$<span id="expense-total" class="fs-5">00</span> </span></span></P>
+                                </div>
+                                <div class="py-3 px-3 text-center mx-3">
+                                    <p class="d-flex justify-content-between"><span class="fs-5 text-secondary">Manager</span> <span><input id="manager-input" class="input-field" type="text"></span></p>
+                                    <p class="d-flex justify-content-between"><span class="fs-5 text-secondary">coach</span> <span><input id="coach-input" class="input-field" type="text"></span></p>
+                                </div>
+                                <div class="py-3 px-3 mx-3 text-center">
+                                    <p><button id="total-btn" class="cal-button">Calculate Total</button></p>
+                                    <p class="d-flex justify-content-between"><span class="fs-5 text-secondary">Total</span> <span class="fs-5 text-warning "> <span>$</span><span id="subtotal">00</span></span></p>
+                                </div>
+
+                            </div>
+                        </div>
+                       
+    
+                        <!-- output result card  -->
+                        </div>
+                    
+                </div>
+
+               </div>
+            </section>
+        </main>
+        <footer class="pb-4">
+            <hr class="text-light">
+            <p class="text-center text-white pt-2">Copyright &copy; 2022 All Rights Reserved</p>
+        </footer>
+    </div>
+    <!-- bootstrap cdn  -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- bootstrap cdn  -->
+    <!-- external js file  -->
+    <script src="./Js/select.js"></script>
+    <!-- external js file  -->
 </body>
+
 </html>
