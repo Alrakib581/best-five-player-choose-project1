@@ -134,10 +134,6 @@ const playerSelectionCardNine = document.getElementById('btn-nine').addEventList
 });
 
 
-
-
-
-
 // per player calculate section 
 const playerExpense = document.getElementById('calculate-btn').addEventListener('click', function () {
     const perPlayerPriceString = document.getElementById('per-player');
